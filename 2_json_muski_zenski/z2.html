@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <script
+    type="text/javascript"
+    src="http://code.jquery.com/jquery-1.7.2.min.js"
+  ></script>
+
+  <script>
+    $.getJSON("http://178.218.168.214/data2.php", function (data) {
+      console.log(data);
+    });
+  </script>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Zadatak 2</title>
+    <style>
+      .grupa {
+        border-collapse: collapse;
+        width: 40%;
+        border: 2px solid black;
+        float: left;
+        margin: 15px;
+      }
+
+      .osoba {
+        text-align: center;
+        margin: 8px;
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+      }
+
+      .crvena {
+        background-color: #f99;
+      }
+      .plava {
+        background-color: #99f;
+      }
+      .zelena {
+        background-color: #9f9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="muski" class="grupa"></div>
+    <div id="zenski" class="grupa"></div>
+    <script src="zadatak2.js"></script>
+  </body>
+</html>

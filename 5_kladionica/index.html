@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      body {
+        text-align: center;
+      }
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+        display: inline-block;
+        margin: 3rem 4rem;
+        vertical-align: text-top;
+      }
+
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+
+      table tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      table tr:hover {
+        background-color: #ddd;
+      }
+
+      table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04aa6d;
+        color: white;
+      }
+      input {
+        height: 2rem;
+        border: solid 1px grey;
+        font-weight: bold;
+        font-size: large;
+      }
+      button {
+        background-color: #04aa6d;
+        color: white;
+        width: 4rem;
+        margin: 20px auto;
+        border: solid 1px transparent;
+        border-radius: 4px;
+        height: 2rem;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <table id="kockara">
+      <th>PONUDA</th>
+      <th>DOMACIN</th>
+      <th>NERJESNO</th>
+      <th>GOST</th>
+    </table>
+    <table id="listic">
+      <th>PAR</th>
+      <th>KVOTA</th>
+      <th>BRISI</th>
+      <tfoot>
+        <td style="font-weight: bold">KVOTA</td>
+        <td style="font-weight: bold" id="kvfield"></td>
+        <td>
+          <input type="number" name="" id="uplata" />
+        </td>
+        <tr>
+          <td id="isplata"></td>
+          <td id="prikazi" style="background-color: #04aa6d; color: white">
+            Prikaži dobitak
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="kladionica.js"></script>
+  </body>
+</html>
