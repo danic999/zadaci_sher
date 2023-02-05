@@ -9,12 +9,6 @@ const options = {
     dateFormat: "iso",
   },
 };
-const nthElement = (arr, n = 0) =>
-  (n > 0 ? arr.slice(n, n + 1) : arr.slice(n))[0];
-
-function checkIfDuplicateExists(arr) {
-  return new Set(arr).size !== arr.length;
-}
 
 axios
   .request(options)
